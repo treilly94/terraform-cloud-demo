@@ -3,7 +3,7 @@ provider "azurerm" {
   features {}
 }
 
-resource "azurerm_resource_group" "example" {
-  name     = "example"
+resource "azurerm_resource_group" "main" {
+  name     = "terraform-cloud-${var.env}"
   location = "Uk South"
 }
